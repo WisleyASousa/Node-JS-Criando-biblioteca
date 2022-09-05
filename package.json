@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "cli": "node cli.js ./arquivos",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

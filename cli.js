@@ -1,5 +1,13 @@
 import { pegaArquivo } from "./index.js";
+import chalk from 'chalk';
 
 
 const caminho = process.argv;
-console.log(pegaArquivo(caminho[2]));
+
+async function processaTexto(caminhoDeArquivo) {
+    const resultado = await pegaArquivo(caminhoDeArquivo[2]);
+    console.log(chalk.yellow("Lista de links"), resultado);
+}
+
+
+console.log(processaTexto(caminho));
